@@ -1,0 +1,70 @@
+/* Menú de Navegación a todo lo ancho */
+.navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Centra los enlaces dentro de la barra */
+    align-items: center;
+    gap: 30px; /* Espacio entre las opciones */
+    z-index: 1000;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #0054d1;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.navegacion a:hover {
+    color: #ffffff;
+    background-color: #0054d1;
+}
+
+/* Ajuste al body para que el contenido no quede tapado por la barra fija */
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fd92b6 0%, #fecfef 99%, #fecfef 100%);
+    padding: 50px 20px 40px 20px; /* Aumentamos el padding superior */
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+p {
+    font-size: 22px;
+}
+
+video {
+    width: 90%;
+    border-radius: 10px;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background: #fbfcfc;
+    margin: 20px 0;
+
+}
